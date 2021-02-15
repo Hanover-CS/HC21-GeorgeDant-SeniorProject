@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Practice Plan</title>
+    <link rel="stylesheet" type="text/css" href="../css/Schedule_style.css">
+    <!-- <script defer src="../controllers/Schedule_creator_controller.js" charset="utf-8"></script> -->
+</head>
+    <body>
+        <main id="main-holder">
+            <h1 id="Menu">Menu</h1>
+            <form>
+                <input type="button" class="button" value="Return to previous page" onClick="javascript:history.go(-1)">
+                <input type="button" class="button" value="Check box saved?" id="checkbox_saved">
+            </form>
+            <form  action="../php/Schedule.php" method="POST">
+                <table width='100 %' border="10" cellpadding='10' cellspacing='20' id="Player_sch">
+                    <tr>
+                        <th class="days">Block #</th>
+                        <th class="days">Monday</th>
+                        <th class="days">Tuesday</th>
+                        <th class="days">Wednesday</th>
+                        <th class="days">Thursday</th>
+                        <th class="days">Friday</th>
+                    </tr>
+                    <tr>
+                        <th>Block: 1</th>
+                        <td>
+                            <input type='checkbox' id='mon_block_1' name="days[]" />
+                            <b>8:00 AM - 9:10 AM</b>
+                        </td>
+                        <td>
+                            <input type='checkbox' id='tues_block_1' name="days[]"/>
+                            <b>8:00 AM - 9:45 AM</b>
+                        </td>
+                        <td>
+                            <input type='checkbox' id='wed_block_1' name="days[]"/>
+                            <b>8:00 AM - 9:10 AM</b>
+                        </td>
+                        <td>
+                            <input type='checkbox' id='thurs_block_1' name="days[]"/>
+                            <b>8:00 AM - 9:45 AM</b>
+                        </td>
+                        <td>
+                            <input type='checkbox' id='fri_block_1' name="days[]"/>
+                            <b>8:00 AM - 9:10 AM</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Block: 2</th>
+                        <td>
+                            <input type='checkbox' id='mon_block_2' name="days[]"/>
+                            <b>9:20 AM - 10:30 AM</b>
+                        </td>
+                        <td>
+                            <input type='checkbox' id='tues_block_2' name="days[]"/>
+                            <b>10:00 AM - 11:45 AM</b>
+                        </td>
+                        <td>
+                            <input type='checkbox' id='wed_block_2' name="days[]"/>
+                            <b>9:20 AM - 10:30 AM</b>
+                        </td>
+                        <td>
+                            <input type='checkbox' id='thurs_block_2' name="days[]"/>
+                            <b>10:00 AM - 11:45 AM</b>
+                        </td>
+                        <td>
+                            <input type='checkbox' id='fri_block_2' name="days[]"/>
+                            <b>9:20 AM - 10:30 AM</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Block: 3</th>
+                        <td>
+                            <input type='checkbox' id='mon_block_3' name="days[]"/>
+                            <b>10:40 AM - 11:50 AM</b>
+                        </td>
+                        <td>
+                            <input type='checkbox' id='tues_block_3' name="days[]"/>
+                            <b>12:20 PM - 2:05 PM</b>
+                        </td>
+                        <td>
+                            <input type='checkbox' id='wed_block_3' name="days[]"/>
+                            <b>10:40 AM - 11:50 AM</b>
+                        </td>
+                        <td>
+                            <input type='checkbox' id='thurs_block_3' name="days[]"/>
+                            <b>12:20 PM - 2:05 PM</b>
+                        </td>
+                        <td>
+                            <input type='checkbox' id='fri_block_3' name="days[]"/>
+                            <b>10:40 AM - 11:50 AM</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Block: 4</th>
+                        <td>
+                            <input type='checkbox' id='mon_block_4' name="days[]"/>
+                            <b>12:00 PM - 1:10 PM</b>
+                        </td>
+                        <td>
+                            <input type='checkbox' id='tues_block_4' name="days[]"/>
+                            <b>2:15 PM - 4:00 PM</b>
+                        </td>
+                        <td>
+                            <input type='checkbox' id='wed_block_4' name="days[]"/>
+                            <b>12:00 PM - 1:10 PM</b>
+                        </td>
+                        <td>
+                            <input type='checkbox' id='thurs_block_4' name="days[]"/>
+                            <b>2:15 PM - 4:00 PM</b>
+                        </td>
+                        <td>
+                            <input type='checkbox' id='fri_block_4' name="days[]"/>
+                            <b>12:00 PM - 1:10 PM</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Block: 5</th>
+                        <td>
+                            <input type='checkbox' id='mon_block_5' name="days[]"/>
+                            <b>1:20 PM - 2:30 PM</b>
+                        </td>
+                        <td>
+                            <i>No block for this time</i>
+                        </td>
+                        <td>
+                            <input type='checkbox' id='wed_block_5' name="days[]"/>
+                            <b>1:20 PM - 2:30 PM</b>
+                        </td>
+                        <td>
+                            <i>No block for this time</i>
+                        </td>
+                        <td>
+                            <input type='checkbox' id='fri_block_5' name="days[]"/>
+                            <b>1:20 PM - 2:30 PM</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Block: 6</th>
+                        <td>
+                            <input type='checkbox' id='mon_block_6' name="days[]"/>
+                            <b>2:40 PM - 3:50 PM</b>
+                        </td>
+                        <td>
+                            <i>No block for this time</i>
+                        </td>
+                        <td>
+                            <input type='checkbox' id='wed_block_6' name="days[]"/>
+                            <b>2:40 PM - 3:50 PM</b>
+                        </td>
+                        <td>
+                            <i>No block for this time</i>
+                        </td>
+                        <td>
+                            <input type='checkbox' id='fri_block_6' name="days[]"/>
+                            <b>2:40 PM - 3:50 PM</b>
+                        </td>
+                    </tr>
+                    <p><input type="submit" value="SUBMIT"></p>
+                </table>
+            </form>
+        </main>
+    </body>
+</html>

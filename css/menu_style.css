@@ -1,0 +1,30 @@
+html{
+  height: 100%;
+  background-image: url("../HC_img.png");
+  background-color: #b80101; 
+  background-position: bottom;
+  background-repeat: repeat-x; 
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+}
+
+.button{
+  border: none;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px 2px black;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+#welcome-message{
+  display: grid;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0px 0px 5px 2px black;
+  padding-left: 10px;
+}

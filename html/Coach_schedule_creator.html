@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Practice Plan</title>
+    <link rel="stylesheet" type="text/css" href="../css/Schedule_style.css">
+    <script defer src="../controllers/Coach_schedule_creator_controller.js" charset="utf-8"></script>
+</head>
+    <body>
+        <main id="main-holder">
+            <h1 id="Menu">Menu</h1>
+            <form>
+                <input type="button" class="button" value="Return to previous page" onClick="javascript:history.go(-1)">
+                <input type="button" class="button" value="Text saved?" id="text_saved">
+            </form>
+            <table width='100 %' border= "10" cellpadding='10' cellspacing='20' id="coach_sch">
+                <tr>
+                    <th class="days">Monday</th>
+                    <th class="days">Tuesday</th>
+                    <th class="days">Wednesday</th>
+                    <th class="days">Thursday</th>
+                    <th class="days">Friday</th>
+                </tr>
+                <tr class="text_cells">
+                    <td>
+                        <b>Enter available office hours</b>
+                        <textarea rows="20" cols="20" wrap="hard" name="coach_mon" id="coach_text"> </textarea>
+                    </td>
+                    <td>
+                        <b>Enter available office hours</b>
+                        <textarea rows="20" cols="20" wrap="hard" name="coach_tues" id="coach_text"> </textarea>
+                    </td>
+                    <td>
+                        <b>Enter available office hours</b>
+                        <textarea rows="20" cols="20" wrap="hard" name="coach_wed" id="coach_text"> </textarea>
+                    </td>
+                    <td>
+                        <b>Enter available office hours</b>
+                        <textarea rows="20" cols="20" wrap="hard" name="coach_thurs" id="coach_text"> </textarea>
+                    </td>
+                    <td>
+                        <b>Enter available office hours</b>
+                        <textarea rows="20" cols="20" wrap="hard" name="coach_fri" id="coach_text"> </textarea>
+                    </td>
+                </tr>
+            </table>
+        </main>
+    </body>
+</html>
