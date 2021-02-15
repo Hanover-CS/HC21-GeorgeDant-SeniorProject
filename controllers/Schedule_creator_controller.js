@@ -13,6 +13,9 @@ check.addEventListener("click", (e) => {
             console.log(inputs[i].value);
             console.log(inputs[i].id);
         }
+        else{
+            console.log(inputs[i].id);
+        }
     }
     console.log(checkboxIndex);
 })
