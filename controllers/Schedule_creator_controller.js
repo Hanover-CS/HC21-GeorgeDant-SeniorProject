@@ -14,6 +14,7 @@ check.addEventListener("click", (e) => {
             console.log(inputs[i].id);
         }
         else{
+            console.log("not selected");
             console.log(inputs[i].id);
         }
     }
